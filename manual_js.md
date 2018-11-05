@@ -2834,7 +2834,7 @@ If you're making use of Ahead-of-Time (AoT) compilation, you would code
     platformBrowser().bootstrapModuleFactory(AppModuleNgFactory);
 ```
 
-[View Example](https://stackblitz.com/edit/angular-cxzaaa)
+[View Example](https://stackblitz.com/edit/angular-002-2837)
 
 The bootstrap process loads *main.ts* which is the main entry point of
 the application. The `AppModule` operates as the root module of our
@@ -2899,7 +2899,7 @@ application.
     export class AppModule { }
 ```
 
-[View Example](https://embed.plnkr.co/W8CkQQ62pIjHFr7BqVjX/)
+[View Example](https://stackblitz.com/edit/angular-003-2902)
 
 </div>
 <div class="section normal markdown-section">
@@ -2943,7 +2943,7 @@ we can make use of it. To use this component we simply add
 Angular will insert an instance of the `HelloComponent` view between
 those tags.
 
-[View Example](http://plnkr.co/edit/bXrxWVkP2MWD8yNDYqVD?p=preview)
+[View Example](https://stackblitz.com/edit/angular-004-2946)
 
 </div>
 <div class="section normal markdown-section">
@@ -3443,7 +3443,7 @@ property name of that object to the component if that property is true.
     }
 ```
 
-[View Example](https://plnkr.co/edit/uUtjY1Qlkx5dOB8gsqCm?p=preview)
+[View Example](https://stackblitz.com/edit/angular-005-3446)
 
 Here we can see that since the object's `card` and `flat` properties are
 true, those classes are applied but since `dark` is false, it's not
