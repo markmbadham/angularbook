@@ -2834,7 +2834,7 @@ If you're making use of Ahead-of-Time (AoT) compilation, you would code
     platformBrowser().bootstrapModuleFactory(AppModuleNgFactory);
 ```
 
-[View Example](https://plnkr.co/edit/X0EBXA?p=preview)
+[View Example](https://stackblitz.com/edit/angular-cxzaaa)
 
 The bootstrap process loads *main.ts* which is the main entry point of
 the application. The `AppModule` operates as the root module of our
