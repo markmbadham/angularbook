@@ -2937,13 +2937,13 @@ the view is `<p>Hello World</p>`.
     }
 ```
 
-We need to import the `Component` decarator from `@angular/core` before
+We need to import the `Component` decorator from `@angular/core` before
 we can make use of it. To use this component we simply add
 `<rio-hello></rio-hello>` to the HTML file or another template, and
 Angular will insert an instance of the `HelloComponent` view between
 those tags.
 
-[View Example](https://stackblitz.com/edit/angular-004-2946)
+[View Example](https://stackblitz.com/edit/angular-004-creating-components)
 
 </div>
 <div class="section normal markdown-section">
@@ -3012,7 +3012,7 @@ We can now use our component like so:
     <rio-hello [name]="helloName"></rio-hello>
 ```
 
-[View Example](http://plnkr.co/edit/LEtEN9?p=preview)
+[View Example](https://stackblitz.com/edit/angular-005-passing-data-into-component)
 
 > Unlike Angular 1.x, this is one-way binding.
 
@@ -3046,7 +3046,7 @@ to process the event.
     }
 ```
 
-[View Example](http://plnkr.co/edit/l4FweMxodN8I26OeqhGH?p=preview)
+[View Example](https://stackblitz.com/edit/angular-006-responding-to-component-events)
 
 To send data out of components via outputs, start by defining the
 outputs attribute. It accepts a list of output parameters that a
