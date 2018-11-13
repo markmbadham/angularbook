@@ -2803,7 +2803,7 @@ single component. To do this we need the following files:
 
 ```javascript
     import { BrowserModule }  from '@angular/platform-browser';
-    import { NgModule } '@angular/core';
+    import { NgModule } from '@angular/core';
     import { AppComponent } from './app.component'
     
     @NgModule({
@@ -2834,7 +2834,7 @@ If you're making use of Ahead-of-Time (AoT) compilation, you would code
     platformBrowser().bootstrapModuleFactory(AppModuleNgFactory);
 ```
 
-[View Example](https://stackblitz.com/edit/angular-002-2837)
+[View Example](https://stackblitz.com/edit/angular-002-understanding-file-structure)
 
 The bootstrap process loads *main.ts* which is the main entry point of
 the application. The `AppModule` operates as the root module of our
@@ -2899,7 +2899,7 @@ application.
     export class AppModule { }
 ```
 
-[View Example](https://stackblitz.com/edit/angular-003-2902)
+[View Example](https://stackblitz.com/edit/angular-003-bootstrapping-providers)
 
 </div>
 <div class="section normal markdown-section">
