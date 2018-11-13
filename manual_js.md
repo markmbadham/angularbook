@@ -3112,7 +3112,7 @@ component exposes to its
     </div>
 ```
 
-[View Example](http://plnkr.co/edit/5RYLZ0?p=preview)
+[View Example](https://stackblitz.com/edit/angular-007-responding-to-component-events-2)
 
 Together a set of input + output bindings define the public API of your
 component. In our templates we use the \[squareBrackets\] to pass inputs
@@ -3174,7 +3174,7 @@ shows how to make property count support two-way
     </div>
 ```
 
-[View Example](http://plnkr.co/edit/nkww1Ov2AWZRMHFyjhjl?p=preview)
+[View Example](https://stackblitz.com/edit/angular-008-two-way-data-binding)
 
 </div>
 <div class="section normal markdown-section">
