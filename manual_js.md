@@ -2995,7 +2995,7 @@ down from the component's parent. For example, we can modify the
       template: '<p>Hello, {{name}}!</p>',
     })
     export class HelloComponent {
-      @Input() name: string;
+      @Input() public name: string;
     }
 ```
 
@@ -3095,7 +3095,7 @@ component exposes to its
       num = 0;
       parentCount = 0;
     
-      ngOnChange(val: number) {
+      counter(val: number) {
         this.parentCount = val;
       }
     }
@@ -3107,7 +3107,7 @@ component exposes to its
     <div>
       Parent Num: {{ num }}<br>
       Parent Count: {{ parentCount }}
-      <rio-counter [count]="num" (result)="ngOnChange($event)">
+      <rio-counter [count]="num" (result)="counter($event)">
       </rio-counter>
     </div>
 ```
