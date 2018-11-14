@@ -3365,7 +3365,7 @@ adding an html `class` attribute.
     }
 ```
 
-[View Example](https://plnkr.co/edit/uUtjY1Qlkx5dOB8gsqCm?p=preview)
+[View Example](https://stackblitz.com/edit/angular-010-ngclass-directive)
 
 In this case, we're binding a string directly so we avoid wrapping the
 directive in square brackets. Also notice that the `ngClass` works with
@@ -3396,7 +3396,7 @@ the `class` attribute to combine the final classes.
     }
 ```
 
-[View Example](https://plnkr.co/edit/uUtjY1Qlkx5dOB8gsqCm?p=preview)
+[View Example](https://stackblitz.com/edit/angular-010-ngclass-directive)
 
 Here, since we are binding to the `ngClass` directive by using an
 expression, we need to wrap the directive name in square brackets.
@@ -3443,7 +3443,7 @@ property name of that object to the component if that property is true.
     }
 ```
 
-[View Example](https://stackblitz.com/edit/angular-005-3446)
+[View Example](https://stackblitz.com/edit/angular-010-ngclass-directive)
 
 Here we can see that since the object's `card` and `flat` properties are
 true, those classes are applied but since `dark` is false, it's not
@@ -3534,9 +3534,9 @@ example component.
       template: `
         <button type="button" (click)="toggleExists()">Toggle Component</button>
         <hr>
-        <app-if-example *ngIf="exists">
+        <div *ngIf="exists">
           Hello
-        </app-if-example>
+        </div>
       `
     })
     export class AppComponent {
@@ -3548,7 +3548,7 @@ example component.
     }
 ```
 
-[View Example](https://plnkr.co/edit/Kb0KW89265F0e9pYJ118?p=preview)
+[View Example](https://stackblitz.com/edit/angular-013-ngif-directive)
 
 Clicking the button will toggle whether or not `IfExampleComponent` is a
 part of the DOM and not just whether it is visible or not. This means
@@ -3911,7 +3911,7 @@ Here is the complete lifecycle hook interface inventory:
 📄 from [Component
 Lifecycle](https://angular.io/docs/ts/latest/guide/lifecycle-hooks.html)
 
-[View Example](http://plnkr.co/edit/kBHV6AximaHAC26kYEOA?p=preview)
+[View Example](https://stackblitz.com/edit/angular-022-component-lifecycle)
 
 </div>
 <div class="section normal markdown-section">
