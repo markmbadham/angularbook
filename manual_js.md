@@ -3287,7 +3287,7 @@ or element's `style` attribute. Here's an example:
     }
 ```
 
-[View Example](https://plnkr.co/edit/akK3Gw8W6EgUQ4PRQp4h?p=preview)
+[View Example](https://stackblitz.com/edit/angular-009-ngstyle-directive)
 
 Notice that binding a directive works the exact same way as component
 attribute bindings. Here, we're binding an expression, an object
