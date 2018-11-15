@@ -2803,7 +2803,7 @@ single component. To do this we need the following files:
 
 ```javascript
     import { BrowserModule }  from '@angular/platform-browser';
-    import { NgModule } '@angular/core';
+    import { NgModule } from '@angular/core';
     import { AppComponent } from './app.component'
     
     @NgModule({
@@ -2834,7 +2834,7 @@ If you're making use of Ahead-of-Time (AoT) compilation, you would code
     platformBrowser().bootstrapModuleFactory(AppModuleNgFactory);
 ```
 
-[View Example](https://plnkr.co/edit/X0EBXA?p=preview)
+[View Example](https://stackblitz.com/edit/angular-002-understanding-file-structure)
 
 The bootstrap process loads *main.ts* which is the main entry point of
 the application. The `AppModule` operates as the root module of our
@@ -2899,7 +2899,7 @@ application.
     export class AppModule { }
 ```
 
-[View Example](https://embed.plnkr.co/W8CkQQ62pIjHFr7BqVjX/)
+[View Example](https://stackblitz.com/edit/angular-003-bootstrapping-providers)
 
 </div>
 <div class="section normal markdown-section">
@@ -2937,13 +2937,13 @@ the view is `<p>Hello World</p>`.
     }
 ```
 
-We need to import the `Component` decarator from `@angular/core` before
+We need to import the `Component` decorator from `@angular/core` before
 we can make use of it. To use this component we simply add
 `<rio-hello></rio-hello>` to the HTML file or another template, and
 Angular will insert an instance of the `HelloComponent` view between
 those tags.
 
-[View Example](http://plnkr.co/edit/bXrxWVkP2MWD8yNDYqVD?p=preview)
+[View Example](https://stackblitz.com/edit/angular-004-creating-components)
 
 </div>
 <div class="section normal markdown-section">
@@ -3012,7 +3012,7 @@ We can now use our component like so:
     <rio-hello [name]="helloName"></rio-hello>
 ```
 
-[View Example](http://plnkr.co/edit/LEtEN9?p=preview)
+[View Example](https://stackblitz.com/edit/angular-005-passing-data-into-component)
 
 > Unlike Angular 1.x, this is one-way binding.
 
@@ -3046,7 +3046,7 @@ to process the event.
     }
 ```
 
-[View Example](http://plnkr.co/edit/l4FweMxodN8I26OeqhGH?p=preview)
+[View Example](https://stackblitz.com/edit/angular-006-responding-to-component-events)
 
 To send data out of components via outputs, start by defining the
 outputs attribute. It accepts a list of output parameters that a
@@ -3112,7 +3112,7 @@ component exposes to its
     </div>
 ```
 
-[View Example](http://plnkr.co/edit/5RYLZ0?p=preview)
+[View Example](https://stackblitz.com/edit/angular-007-responding-to-component-events-2)
 
 Together a set of input + output bindings define the public API of your
 component. In our templates we use the \[squareBrackets\] to pass inputs
@@ -3174,7 +3174,7 @@ shows how to make property count support two-way
     </div>
 ```
 
-[View Example](http://plnkr.co/edit/nkww1Ov2AWZRMHFyjhjl?p=preview)
+[View Example](https://stackblitz.com/edit/angular-008-two-way-data-binding)
 
 </div>
 <div class="section normal markdown-section">
@@ -3287,7 +3287,7 @@ or element's `style` attribute. Here's an example:
     }
 ```
 
-[View Example](https://plnkr.co/edit/akK3Gw8W6EgUQ4PRQp4h?p=preview)
+[View Example](https://stackblitz.com/edit/angular-009-ngstyle-directive)
 
 Notice that binding a directive works the exact same way as component
 attribute bindings. Here, we're binding an expression, an object
@@ -3365,7 +3365,7 @@ adding an html `class` attribute.
     }
 ```
 
-[View Example](https://plnkr.co/edit/uUtjY1Qlkx5dOB8gsqCm?p=preview)
+[View Example](https://stackblitz.com/edit/angular-010-ngclass-directive)
 
 In this case, we're binding a string directly so we avoid wrapping the
 directive in square brackets. Also notice that the `ngClass` works with
@@ -3396,7 +3396,7 @@ the `class` attribute to combine the final classes.
     }
 ```
 
-[View Example](https://plnkr.co/edit/uUtjY1Qlkx5dOB8gsqCm?p=preview)
+[View Example](https://stackblitz.com/edit/angular-010-ngclass-directive)
 
 Here, since we are binding to the `ngClass` directive by using an
 expression, we need to wrap the directive name in square brackets.
@@ -3443,7 +3443,7 @@ property name of that object to the component if that property is true.
     }
 ```
 
-[View Example](https://plnkr.co/edit/uUtjY1Qlkx5dOB8gsqCm?p=preview)
+[View Example](https://stackblitz.com/edit/angular-010-ngclass-directive)
 
 Here we can see that since the object's `card` and `flat` properties are
 true, those classes are applied but since `dark` is false, it's not
@@ -3534,9 +3534,9 @@ example component.
       template: `
         <button type="button" (click)="toggleExists()">Toggle Component</button>
         <hr>
-        <app-if-example *ngIf="exists">
+        <div *ngIf="exists">
           Hello
-        </app-if-example>
+        </div>
       `
     })
     export class AppComponent {
@@ -3548,7 +3548,7 @@ example component.
     }
 ```
 
-[View Example](https://plnkr.co/edit/Kb0KW89265F0e9pYJ118?p=preview)
+[View Example](https://stackblitz.com/edit/angular-013-ngif-directive)
 
 Clicking the button will toggle whether or not `IfExampleComponent` is a
 part of the DOM and not just whether it is visible or not. This means
@@ -3570,9 +3570,9 @@ item of an iterable as that template's context.
     @Component({
       selector: 'app-root',
       template: `
-        <app-for-example *ngFor="let episode of episodes" [episode]="episode">
+        <div *ngFor="let episode of episodes">
           {{episode.title}}
-        </app-for-example>
+        </div>
       `
     })
     export class AppComponent {
@@ -3589,7 +3589,7 @@ item of an iterable as that template's context.
     }
 ```
 
-[View Example](https://plnkr.co/edit/dXU4K13piTYotDX5Nhi6?p=preview)
+[View Example](https://stackblitz.com/edit/angular-014-ngfor-directive)
 
 The `NgFor` directive has a different syntax from other directives we've
 seen. If you're familiar with the [for...of
@@ -3605,16 +3605,16 @@ it looks a bit different:
     @Component({
       selector: 'app',
       template: `
-        <template ngFor [ngForOf]="episodes" let-episode>
-          <app-for-example [episode]="episode">
+        <ng-template ngFor [ngForOf]="episodes" let-episode>
+          <div>
             {{episode.title}}
-          </app-for-example>
-        </template>
+          </div>
+        </ng-template>
       `
     })
 ```
 
-[View Example](https://plnkr.co/edit/dXU4K13piTYotDX5Nhi6?p=preview)
+[View Example](https://stackblitz.com/edit/angular-014-ngfor-directive)
 
 Notice that there is an odd `let-episode` property on the template
 element. The `NgFor` directive provides some variables as context within
@@ -3640,18 +3640,18 @@ variables:
     @Component({
       selector: 'app-root',
       template: `
-        <app-for-example
+        <div
           *ngFor="let episode of episodes; let i = index; let isOdd = odd"
           [episode]="episode"
           [ngClass]="{ odd: isOdd }">
           {{i+1}}. {{episode.title}}
-        </app-for-example>
+        </div>
     
         <hr>
     
         <h2>Desugared</h2>
     
-        <template ngFor [ngForOf]="episodes" let-episode let-i="index" let-isOdd="odd">
+        <ngFor [ngForOf]="episodes" let-episode let-i="index" let-isOdd="odd">
           <for-example [episode]="episode" [ngClass]="{ odd: isOdd }">
             {{i+1}}. {{episode.title}}
           </for-example>
@@ -3797,7 +3797,7 @@ in JavaScript and other programming languages, but in the template.
     }
 ```
 
-[View Example](https://plnkr.co/edit/QWxD0DIZi6QiISafwfgu?p=preview)
+[View Example](https://stackblitz.com/edit/angular-019-ngswitch)
 
 Here we see the `ngSwitch` attribute directive being attached to an
 element. This expression bound to the directive defines what will
@@ -3911,7 +3911,7 @@ Here is the complete lifecycle hook interface inventory:
 📄 from [Component
 Lifecycle](https://angular.io/docs/ts/latest/guide/lifecycle-hooks.html)
 
-[View Example](http://plnkr.co/edit/kBHV6AximaHAC26kYEOA?p=preview)
+[View Example](https://stackblitz.com/edit/angular-022-component-lifecycle)
 
 </div>
 <div class="section normal markdown-section">
