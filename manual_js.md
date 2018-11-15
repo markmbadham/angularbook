@@ -3570,9 +3570,9 @@ item of an iterable as that template's context.
     @Component({
       selector: 'app-root',
       template: `
-        <app-for-example *ngFor="let episode of episodes" [episode]="episode">
+        <div *ngFor="let episode of episodes">
           {{episode.title}}
-        </app-for-example>
+        </div>
       `
     })
     export class AppComponent {
@@ -3589,7 +3589,7 @@ item of an iterable as that template's context.
     }
 ```
 
-[View Example](https://plnkr.co/edit/dXU4K13piTYotDX5Nhi6?p=preview)
+[View Example](https://stackblitz.com/edit/angular-014-ngfor-directive)
 
 The `NgFor` directive has a different syntax from other directives we've
 seen. If you're familiar with the [for...of
@@ -3605,16 +3605,16 @@ it looks a bit different:
     @Component({
       selector: 'app',
       template: `
-        <template ngFor [ngForOf]="episodes" let-episode>
-          <app-for-example [episode]="episode">
+        <ng-template ngFor [ngForOf]="episodes" let-episode>
+          <div>
             {{episode.title}}
-          </app-for-example>
-        </template>
+          </div>
+        </ng-template>
       `
     })
 ```
 
-[View Example](https://plnkr.co/edit/dXU4K13piTYotDX5Nhi6?p=preview)
+[View Example](https://stackblitz.com/edit/angular-014-ngfor-directive)
 
 Notice that there is an odd `let-episode` property on the template
 element. The `NgFor` directive provides some variables as context within
@@ -3640,18 +3640,18 @@ variables:
     @Component({
       selector: 'app-root',
       template: `
-        <app-for-example
+        <div
           *ngFor="let episode of episodes; let i = index; let isOdd = odd"
           [episode]="episode"
           [ngClass]="{ odd: isOdd }">
           {{i+1}}. {{episode.title}}
-        </app-for-example>
+        </div>
     
         <hr>
     
         <h2>Desugared</h2>
     
-        <template ngFor [ngForOf]="episodes" let-episode let-i="index" let-isOdd="odd">
+        <ngFor [ngForOf]="episodes" let-episode let-i="index" let-isOdd="odd">
           <for-example [episode]="episode" [ngClass]="{ odd: isOdd }">
             {{i+1}}. {{episode.title}}
           </for-example>
@@ -3797,7 +3797,7 @@ in JavaScript and other programming languages, but in the template.
     }
 ```
 
-[View Example](https://plnkr.co/edit/QWxD0DIZi6QiISafwfgu?p=preview)
+[View Example](https://stackblitz.com/edit/angular-019-ngswitch)
 
 Here we see the `ngSwitch` attribute directive being attached to an
 element. This expression bound to the directive defines what will
