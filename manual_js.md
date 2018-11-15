@@ -3660,7 +3660,7 @@ variables:
     })
 ```
 
-[View Example](https://plnkr.co/edit/58A5p8cWpVIY7Ne4O7aO?p=preview)
+[View Example](https://stackblitz.com/edit/angular-016-ngfor-local-variables)
 
 ## trackBy
 
@@ -3744,7 +3744,7 @@ logging to it.
     }
 ```
 
-[View Example](https://plnkr.co/edit/jQmozF?p=preview)
+[View Example](https://stackblitz.com/edit/angular-017-ngfor-trackby)
 
 When we view the example, as we click on `Add Episode`, we can see
 console output indicating that only one component was created - for the
@@ -3754,7 +3754,7 @@ However, if we were to remove the `trackBy` from the `*ngFor` - every
 time we click the button, we would see the items in the component
 getting destroyed and recreated.
 
-[View Example Without trackBy](https://plnkr.co/edit/hC2cIK?p=preview)
+[View Example Without trackBy](https://stackblitz.com/edit/angular-018-ngfor-without-trackby)
 
 </div>
 <div class="section normal markdown-section">
@@ -3836,7 +3836,7 @@ template tags.
     })
 ```
 
-[View Example](https://plnkr.co/edit/V2nWlGOwIITPrUDksGNG?p=preview)
+[View Example](https://stackblitz.com/edit/angular-020-multiple-structural-directives)
 
 The previous tabs example can use `ngFor` and `ngSwitch` if the tab
 title and content is abstracted away into the component class.
@@ -3886,7 +3886,7 @@ title and content is abstracted away into the component class.
     }
 ```
 
-[View Example](https://plnkr.co/edit/YOT4G4buUZduwvVi8cMA?p=preview)
+[View Example](https://stackblitz.com/edit/angular-021-multiple-structural-directives-2)
 
 </div>
 <div class="section normal markdown-section">
@@ -3951,7 +3951,7 @@ gain access to class methods, like `show()`.
     }
 ```
 
-[View Example](http://plnkr.co/edit/NEeEPfkHsYBbVuuAxz5z?p=preview)
+[View Example](https://stackblitz.com/edit/angular-023-accessing-child-component-1)
 
 In the interest of separation of concerns, we'd normally want to have
 child elements take care of their own behaviors and pass in an
@@ -3995,7 +3995,7 @@ array.
     }
 ```
 
-[View Example](http://plnkr.co/edit/zPtb3ZJLx7CWJa7RptxZ?p=preview)
+[View Example](https://stackblitz.com/edit/angular-024-accessing-child-component-2)
 
 As shown above, given a class type to `@ViewChild` and `@ViewChildren` a
 child component or a list of children component are selected
@@ -4024,7 +4024,7 @@ respectively using their selector from the template. In addition both
     }
 ```
 
-[View Example](http://plnkr.co/edit/EnOxkmJy7Y1LIPN4wUKc?p=preview)
+[View Example](https://stackblitz.com/edit/angular-025-accessing-child-component-3)
 
 Note that view children will not be set until the `ngAfterViewInit`
 lifecycle hook is called.
@@ -4039,7 +4039,7 @@ is that `@ContentChild` and `@ContentChildren` select from the
 Again, note that content children will not be set until the
 `ngAfterContentInit` component lifecycle hook.
 
-[View Example](http://plnkr.co/edit/SkX3kkAA4uprtwfjDZ6y?p=preview)
+[View Example](https://stackblitz.com/edit/angular-026-contentchild)
 
 </div>
 <div class="section normal markdown-section">
@@ -4076,7 +4076,7 @@ Angular provides three encapsulation strategies:
         // ...
         }
 
-[View Example](http://plnkr.co/edit/E5Hb6B5dRN0llz3JuO57?p=preview)
+[View Example](https://stackblitz.com/edit/angular-027-view-encapsulation)
 
 </div>
 <div class="section normal markdown-section">
@@ -4114,7 +4114,7 @@ Provides access to the underlying native element (DOM
     }
 ```
 
-[View Example](https://plnkr.co/edit/TY7SrMXs8XoV6AOYwn9k?p=preview)
+[View Example](https://stackblitz.com/edit/angular-028-elementref)
 
 </div>
 <div class="section normal markdown-section">
@@ -4126,7 +4126,7 @@ Let's take a look at a basic example of how to create and use an
 
 ```javascript
     import {Component} from '@angular/core';
-    import {Observable} from 'rxjs/Observable';
+    import {Observable} from 'rxjs';
     
     @Component({
         selector: 'app',
@@ -4147,7 +4147,7 @@ Let's take a look at a basic example of how to create and use an
     })
     export class MyApp {
     
-      private data: Observable<Array<number>>;
+      private data: Observable<number>;
       private values: Array<number> = [];
       private anyErrors: boolean;
       private finished: boolean;
@@ -4180,7 +4180,7 @@ Let's take a look at a basic example of how to create and use an
     }
 ```
 
-[View Example](http://plnkr.co/edit/SA25mG?p=preview)
+[View Example](https://stackblitz.com/edit/angular-029-using-observables)
 
 First we import `Observable` into our component from `rxjs/Observable`.
 Next, in our constructor we create a new `Observable`. Note that this
@@ -4223,7 +4223,7 @@ to happen once.
 ```javascript
     export class MyApp {
     
-      private data: Observable<Array<number>>;
+      private data: Observable<number>;
       private values: Array<number> = [];
       private anyErrors: boolean;
       private finished: boolean;
@@ -4255,7 +4255,7 @@ to happen once.
     }
 ```
 
-[View Example](http://plnkr.co/edit/eJWIJd?p=preview)
+[View Example](https://stackblitz.com/edit/angular-030-using-observables-2)
 
 </div>
 <div class="section normal markdown-section">
@@ -4295,7 +4295,7 @@ stream and use the function reserved for handling errors in our
     }
 ```
 
-[View Example](http://plnkr.co/edit/09rodT?p=preview)
+[View Example](https://stackblitz.com/edit/angular-031-error-handling)
 
 Here an error is raised and caught. One thing to note is that if we
 included a `.complete()` after we raised the error, this event will not
@@ -4351,7 +4351,7 @@ returns a data type that we can call `.unsubscribe()` on.
     }
 ```
 
-[View Example](http://plnkr.co/edit/0MfW5d?p=preview)
+[View Example](https://stackblitz.com/edit/angular-032-disposing-subscriptions)
 
 Calling `.unsubscribe()` will unhook a member's callbacks listening in
 on the `Observable` stream. When creating an `Observable` you can also
@@ -4414,7 +4414,7 @@ events and getting new data. Let's take a quick look at this:
 ```javascript
     import {Component} from '@angular/core';
     import {Http} from '@angular/http';
-    import 'rxjs/Rx';
+    import 'rxjs';
     
     @Component({
         selector: 'app',
@@ -4441,7 +4441,7 @@ events and getting new data. Let's take a quick look at this:
     }
 ```
 
-[View Example](http://plnkr.co/edit/AikZi1?p=preview)
+[View Example](https://stackblitz.com/edit/angular-033-observable-http-events)
 
 This basic example outlines how the `Http` library's common routines
 like `get`, `post`, `put` and `delete` all return `Observables` that
@@ -4490,7 +4490,7 @@ and listen for any changes made to the value of the input field.
     }
 ```
 
-[View Example](http://plnkr.co/edit/vCdjZM?p=preview)
+[View Example](https://stackblitz.com/edit/angular-034-observable-form-events)
 
 Here we have created a new form by initializing a new `FormControl`
 field and grouped it into a `FormGroup` tied to the `coolForm` HTML
