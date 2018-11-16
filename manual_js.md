@@ -4526,7 +4526,7 @@ Let's expand our example and do something a little more with our stream:
     }
 ```
 
-[View Example](http://plnkr.co/edit/a0JuHC?p=preview)
+[View Example](hhttps://stackblitz.com/edit/angular-035-observables-array-operations)
 
 Here are two really useful array operations - `map` and `filter`. What
 exactly do these do?
@@ -4916,7 +4916,7 @@ cases. The above example would be simplified in TypeScript to:
     }
 ```
 
-[View Example](https://plnkr.co/edit/BAYoY7W6tUkbnczk3Lsg?p=preview)
+[View Example](https://stackblitz.com/edit/angular-038-inject)
 
 ## @Injectable()
 
@@ -5033,7 +5033,7 @@ In the hypothetical app component, 'Random' could be injected like:
 ```
 
 [View
-Example](http://plnkr.co/edit/BKMZYlAviRhauCzxMnx6?p=preview "Random DI 1")
+Example](https://stackblitz.com/edit/angular-039-injection-beyond-classes)
 
 One important note is that 'Random' is in quotes, both in the `provide`
 function and in the consumer. This is because as a factory we have no
@@ -5056,7 +5056,7 @@ for these cases that works almost exactly the same:
 ```
 
 [View
-Example](http://plnkr.co/edit/xGMOsHn1v3tTbc9RkuDz?p=preview "Random DI 2")
+Example](https://stackblitz.com/edit/angular-040-injection-beyond-classes-2)
 
 In this case, the product of `Math.random` is assigned to the `useValue`
 property passed to the `provider`.
@@ -5154,7 +5154,7 @@ rename the imports as shown below.
     export class AppModule { }
 ```
 
-[View Example](https://plnkr.co/edit/QrvjsucT6lF6dnFUb2ag?p=preview)
+[View Example](https://stackblitz.com/edit/angular-041-avoiding-injection-collisions)
 
 When the application runs, it encounters a collision problem resulting
 in both modules getting the same value for their configuration, in this
@@ -5204,7 +5204,7 @@ constructor of the token, it will not result in identical symbols.
     }
 ```
 
-[View Example](https://plnkr.co/edit/SHfTH9R6JVDwJKnzRFSH?p=preview)
+[View Example](https://stackblitz.com/edit/angular-042-opaque-token)
 
 After turning the identifying tokens into `OpaqueToken`s without
 changing anything else, the collision is avoided. Every service gets the
@@ -5385,7 +5385,10 @@ value as the root injector's `Unique` instance.
 ```
 
 [View
-Example](http://plnkr.co/edit/abeUOuG8AdHDUcvjial8?p=preview "Injector Tree Example")
+Example](https://stackblitz.com/edit/angular-043-the-injector-tree)
+
+</div>
+<div class="section normal markdown-section">
 
 </div>
 <div class="section normal markdown-section">
@@ -5398,7 +5401,7 @@ are creating a `SearchService` to interact with the Spotify API.
 ```javascript
     import { Http } from '@angular/http';
     import { Injectable } from '@angular/core';
-    import { Observable } from 'rxjs/Observable';
+    import { Observable } from 'rxjs';
     import 'rxjs/add/operator/map';
     
     @Injectable()
@@ -5414,44 +5417,7 @@ are creating a `SearchService` to interact with the Spotify API.
     }
 ```
 
-[View Example](http://plnkr.co/edit/C8Zv9i?p=preview)
-
-Here we are making an HTTP GET request which is exposed to us as an
-observable. You will notice the `.map` operator chained to `.get`. The
-`Http` service provides us with the raw response as a string. In order
-to consume the fetched data we have to convert it to JSON.
-
-In addition to `Http.get()`, there are also `Http.post()`, `Http.put()`,
-`Http.delete()`, etc. They all return observables.
-
-</div>
-<div class="section normal markdown-section">
-
-## Making HTTP Requests
-
-To make HTTP requests we will use the `Http` service. In this example we
-are creating a `SearchService` to interact with the Spotify API.
-
-```javascript
-    import { Http } from '@angular/http';
-    import { Injectable } from '@angular/core';
-    import { Observable } from 'rxjs/Observable';
-    import 'rxjs/add/operator/map';
-    
-    @Injectable()
-    export class SearchService {
-    
-      constructor(private http: Http) {}
-    
-      search(term: string) {
-        return this.http
-          .get('https://api.spotify.com/v1/search?q=' + term + '&type=artist')
-          .map(response => response.json());
-      }
-    }
-```
-
-[View Example](http://plnkr.co/edit/C8Zv9i?p=preview)
+[View Example](https://stackblitz.com/edit/angular-044-making-http-requests)
 
 Here we are making an HTTP GET request which is exposed to us as an
 observable. You will notice the `.map` operator chained to `.get`. The
@@ -5491,7 +5457,7 @@ onwards.
     }
 ```
 
-[View Example](http://plnkr.co/edit/3lCaeI?p=preview)
+[View Example](https://stackblitz.com/edit/angular-045-catch-and-release)
 
 It also allows us to inspect the error and decide which route to take.
 For example, if we encounter a server error then use a cached version of
@@ -5572,7 +5538,7 @@ attempts fail the stream throws an error.
 ```javascript
     import { Http } from '@angular/http';
     import { Injectable } from '@angular/core';
-    import { Observable } from 'rxjs/Rx';
+    import { Observable } from 'rxjs';
     
     @Injectable()
     export class SearchService {
@@ -10512,7 +10478,7 @@ example:
 ```javascript
     import {Injectable} from '@angular/core';
     import {Store} from '@ngrx/store';
-    import {Observable} from 'rxjs/Observable';
+    import {Observable} from 'rxjs';
     
     import {AppState} from '../models';
     
@@ -10972,7 +10938,7 @@ well as allowing the user to reset the counter to zero.
 
 ```javascript
     import {Component, Input} from '@angular/core';
-    import {Observable} from 'rxjs/Observable';
+    import {Observable} from 'rxjs';
     
     import {CounterService} from '../services';
     import {CounterActions} from '../store/counter/counter.actions';
@@ -11187,7 +11153,7 @@ Let's build out a `CustomizationEffects` service to accomplish this:
     import {Injectable} from '@angular/core';
     import {Action} from '@ngrx/store';
     import {Actions, Effect} from '@ngrx/effects';
-    import {Observable} from 'rxjs/Observable';
+    import {Observable} from 'rxjs';
     
     import {createAction} from '../createAction';
     import {CustomizationActions, SessionActions} from '../session/session.actions.ts';
@@ -12513,7 +12479,7 @@ requested the right URL, and that it returns that expected data.
       ResponseOptions,
       Response
     } from '@angular/http';
-    import { Observable } from 'rxjs/Observable';
+    import { Observable } from 'rxjs';
     import 'rxjs/add/observable/of';
     import {SearchWiki} from './wikisearch.service';
     
