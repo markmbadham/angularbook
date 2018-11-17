@@ -5999,7 +5999,7 @@ Finally, the `MovieComponent` shows the information provided by the
     }
 ```
 
-[View Example](http://plnkr.co/edit/RKfTH5xSEA9KhuY9quSa?p=preview)
+[View Example](https://stackblitz.com/edit/angular-050-change-detection)
 
 </div>
 <div class="section normal markdown-section">
@@ -6085,7 +6085,7 @@ can use the property `changeDetection` of the `@Component` decorator.
     }
 ```
 
-[View Example](http://plnkr.co/edit/yBekf1Do7UeB8F4EQzxU?p=preview)
+[View Example](https://stackblitz.com/edit/angular-051-change-detection-2)
 
 Let's see what happens when a user clicks the button "Change Actor
 Properties" when using the `Default` strategy.
@@ -6206,10 +6206,10 @@ detection strategy on the `MovieComponent`.
     }
 ```
 
-[View Example](http://plnkr.co/edit/yjr8R6LhWpOKcGnAwYNS?p=preview)
+[View Example](https://stackblitz.com/edit/angular-052-change-detection-onpush)
 
 This will inform Angular that our component only depends on its inputs
-and that any object that is passed to it should be considered immutable.
+and that any object that is passed to it shouldiew be considered immutable.
 This time when we click the "Change Actor Properties" button nothing
 changes in the view.
 
@@ -6357,7 +6357,7 @@ of the immutable.
     }
 ```
 
-[View Example](http://plnkr.co/edit/0Qp7ynAcZCqcv67OvsSD?p=preview)
+[View Example](https://stackblitz.com/edit/angular-053-enforcing-immutability)
 
 Using this pattern we are taking full advantage of the "OnPush" change
 detection strategy and thus reducing the amount of work done by Angular
@@ -6408,7 +6408,7 @@ Let's start with a simple button that moves a user to a different page.
     }
 ```
 
-[View Example](https://plnkr.co/edit/9ANDvP9C1p2jSZW2s4LX?p=preview)
+[View Example](https://stackblitz.com/edit/angular-054-creating-attribute-directive-1)
 
 We're polite, so rather than just sending the user to a new page, we're
 going to ask if they're ok with that first by creating an attribute
@@ -6427,7 +6427,7 @@ directive and attaching that to the button.
     }
 ```
 
-[View Example](https://plnkr.co/edit/KMfnzrmSx0ywKp6ztaNN?p=preview)
+[View Example](https://stackblitz.com/edit/angular-055-creating-attribute-directive-2)
 
 Directives are created by using the `@Directive` decorator on a class
 and specifying a selector. For directives, the selector name must be
@@ -6449,7 +6449,7 @@ directive to the button we created earlier.
     `
 ```
 
-[View Example](https://plnkr.co/edit/KMfnzrmSx0ywKp6ztaNN?p=preview)
+[View Example](https://stackblitz.com/edit/angular-055-creating-attribute-directive-2)
 
 Notice, however, that the button doesn't work quite as expected. That's
 because while we're listening to the click event and showing a confirm
@@ -6476,7 +6476,7 @@ handler.
     }
 ```
 
-[View Example](https://plnkr.co/edit/OBuN06R0hmcnpGu01Z7I?p=preview)
+[View Example](https://stackblitz.com/edit/angular-057-creating-attribute-directive-3)
 
 Here, we want to specify what action needs to happen after a confirm
 dialog's been sent out and to do this we create an input binding just
@@ -6491,7 +6491,7 @@ binding and our component code changes like this:
   </button>
 ```
 
-[View Example](https://plnkr.co/edit/OBuN06R0hmcnpGu01Z7I?p=preview)
+[View Example](https://stackblitz.com/edit/angular-057-creating-attribute-directive-3)
 
 Now our button works just as we expected. We might want to be able to
 customize the message of the confirm dialog however. To do this we'll
@@ -6516,7 +6516,7 @@ use another binding.
     }
 ```
 
-[View Example](https://plnkr.co/edit/S8pkKyrdF4jB7HlVQ76n?p=preview)
+[View Example](https://stackblitz.com/edit/angular-059-creating-attribute-directive-4)
 
 Our directive gets a new input property that represents the confirm
 dialog message, which we pass in to `window.confirm` call. To take
@@ -6532,7 +6532,7 @@ button.
     </button>
 ```
 
-[View Example](https://plnkr.co/edit/S8pkKyrdF4jB7HlVQ76n?p=preview)
+[View Example](https://stackblitz.com/edit/angular-059-creating-attribute-directive-4)
 
 Now we have a button with a customizable confirm message before it moves
 you to a new url.
