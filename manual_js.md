@@ -5515,7 +5515,7 @@ subscription.
     }
 ```
 
-[View Example](http://plnkr.co/edit/XQL8v9?p=preview)
+[View Example](https://stackblitz.com/edit/angular-046-cancel-a-request)
 
 </div>
 <div class="section normal markdown-section">
@@ -5554,7 +5554,7 @@ attempts fail the stream throws an error.
     }
 ```
 
-[View Example](http://plnkr.co/edit/zSAWwV?p=preview)
+[View Example](https://stackblitz.com/edit/angular-047-http-retry)
 
 </div>
 <div class="section normal markdown-section">
@@ -5653,7 +5653,7 @@ OK, let's take a look at the component that will be using this service.
     }
 ```
 
-[View Example](http://plnkr.co/edit/L6CLXo?p=preview)
+[View Example](https://stackblitz.com/edit/angular-048-http-flatmap)
 
 Here we have set up a basic form with a single field, `search`, which we
 subscribe to for event changes. We've also set up a simple binding for
@@ -5803,7 +5803,7 @@ Here is the revised component using `switchMap` instead of `flatMap`.
     }
 ```
 
-[View Example](http://plnkr.co/edit/FYLTcx?p=preview)
+[View Example](https://stackblitz.com/edit/angular-049-http-switchmap)
 
 This implementation of incremental search with `switchMap` is more
 robust than the one we saw on the previous page with `flatMap`. The
@@ -6581,7 +6581,7 @@ We can also respond to external events, such as from `window` or
     }
 ```
 
-[View Example](https://plnkr.co/edit/iJvMpPYDQmiwqvUTKSU8?p=preview)
+[View Example](https://stackblitz.com/edit/angular-061-listening-element-host)
 
 > Although less common, we can also use `@HostListener` if we'd like to
 > register listeners on the host element of a Component.
@@ -6694,7 +6694,7 @@ are loaded, either for performance or UX.
     }
 ```
 
-[View Example](https://plnkr.co/edit/80AGn8bR4CiyH0ceP8ws?p=preview)
+[View Example](https://stackblitz.com/edit/angular-062-creating-structural-directive)
 
 We use the same `@Directive` class decorator as attribute directives and
 define a selector in the same way. One big difference here is that due
@@ -6721,7 +6721,7 @@ the Angular built-in structural directives.
     }
 ```
 
-[View Example](https://plnkr.co/edit/80AGn8bR4CiyH0ceP8ws?p=preview)
+[View Example](https://stackblitz.com/edit/angular-062-creating-structural-directive)
 
 Notice that no content is being rendered however. This is due to Angular
 simulating the html `template` tag and not rendering any child elements
@@ -6771,7 +6771,7 @@ are interested in using *Embedded Views* in this
     }
 ```
 
-[View Example](https://plnkr.co/edit/UIyFaG6VyHeeGlCKM76L?p=preview)
+[View Example](https://stackblitz.com/edit/angular-064-view-containers)
 
 Directives get access to the view container by injecting a
 `ViewContainerRef`. Embedded views are created and attached to a view
@@ -6819,7 +6819,7 @@ loads and make that variable available in the template.
     }
 ```
 
-[View Example](https://plnkr.co/edit/GmjxiDSbv78zbBFqw8yv?p=preview)
+[View Example](https://stackblitz.com/edit/angular-065-context-variables)
 
 We've made a few changes to our `appDelay` directive. We've created a
 new `DelayContext` class that contains the context that we want to
@@ -6848,7 +6848,7 @@ variable in the same way we access variables in `ngFor`.
     })
 ```
 
-[View Example](https://plnkr.co/edit/pSv4JsGhxxwzJOh9qSNj?p=preview)
+[View Example](https://stackblitz.com/edit/angular-066-context-variables-2)
 
 </div>
 <div class="section normal markdown-section">
@@ -7365,7 +7365,7 @@ desired output. A basic example of using pipes is shown below:
     }
 ```
 
-[View Example](http://plnkr.co/edit/JIdYGCz1U9ElEpCArg01?p=preview)
+[View Example](https://stackblitz.com/edit/angular-067-using-pipes)
 
 ## Passing Parameters
 
@@ -7395,7 +7395,7 @@ You can also pass multiple parameters this way:
     }
 ```
 
-[View Example](http://plnkr.co/edit/IjGPii3n7qpezcglp03O?p=preview)
+[View Example](https://stackblitz.com/edit/angular-068-passing-parameters)
 
 ## Chaining Pipes
 
@@ -7414,7 +7414,7 @@ expression.
     }
 ```
 
-[View Example](http://plnkr.co/edit/mnnujN8qPMfRzmNg4uo4?p=preview)
+[View Example](https://stackblitz.com/edit/angular-069-chaining-pipes)
 
 </div>
 <div class="section normal markdown-section">
@@ -7479,7 +7479,7 @@ argument in the same order.
     }
 ```
 
-[View Example](http://plnkr.co/edit/XF8NRDK3f7Yt0w1eUJDK?p=preview)
+[View Example](https://stackblitz.com/edit/angular-070-custom-pipes)
 
 </div>
 <div class="section normal markdown-section">
@@ -7524,7 +7524,7 @@ and its returned values depend on that subscription.
     }
 ```
 
-[View Example](http://plnkr.co/edit/LI2RHBfX6NVTvBeNnphR?p=preview)
+[View Example](https://stackblitz.com/edit/angular-071-async-pipe)
 
 ## Implementing Stateful Pipes
 
@@ -7562,7 +7562,7 @@ this pipe each cycle, whether its input has changed or not.
     }
 ```
 
-[View Example](http://plnkr.co/edit/HGIyhJvTrZEPtGn98QIG?p=preview)
+[View Example](https://stackblitz.com/edit/angular-072-stateful-pipes)
 
 </div>
 <div class="section normal markdown-section">
@@ -7998,7 +7998,7 @@ following:
     </form>
 ```
 
-[View Example](https://plnkr.co/edit/fsSozv?p=preview)
+[View Example](https://stackblitz.com/edit/angular-073-reactive-form-basics)
 
 ### `FormControl`
 
@@ -8113,7 +8113,7 @@ Note that we have added rather robust validation on both the fields and
 the form itself, using nothing more than built-in validators and some
 template logic.
 
-[View Example](https://plnkr.co/edit/TjpNF7?p=preview)
+[View Example](https://stackblitz.com/edit/angular-074-validating-reactive-forms)
 
 We are using `.valid` and `.untouched` to determine if we need to show
 errors - while the field is required, there is no reason to tell the
@@ -8165,7 +8165,7 @@ the `.hasError()` test.
     <!-- ... -->
 ```
 
-[View Example](https://plnkr.co/edit/obOPx9?p=preview)
+[View Example](https://stackblitz.com/edit/angular-075-reactive-forms-custom-validation)
 
 ### Predefined Parameters
 
@@ -8223,7 +8223,7 @@ Let's apply that thinking back to a `PunctuationValidator`.
     <!-- ... -->
 ```
 
-[View Example](https://plnkr.co/edit/2NNy4Q?p=preview)
+[View Example](https://stackblitz.com/edit/angular-076-formbuilder-predefined-validation)
 
 ### Validating Inputs Using Other Inputs
 
@@ -8249,82 +8249,12 @@ drilling through the form, via root.
     ]);
 ```
 
-[View Example](https://plnkr.co/edit/wfZgPw?p=preview)
+[View Example](https://stackblitz.com/edit/angular-077-formbuilder-validating-other-inputs)
 
 </div>
 <div class="section normal markdown-section">
 
 # Visual Cues for Users
-
-TML5 provides `:invalid` and `:valid` pseudo-selectors for its input
-ields.
-
-``javascript
-   input[type="text"]:valid {
-     border: 2px solid green;
-   }
-   
-   input[type="text"]:invalid {
-     border: 2px solid red;
-   }
-
-nfortunately, this system is rather unsophisticated and would require
-ore manual effort in order to work with complex forms or user behavior.
-
-ather than writing extra code, and creating and enforcing your own CSS
-lasses, to manage these behaviors, Angular provides you with several
-lasses, already accessible on your inputs.
-
-``javascript
-   /* field value is valid */
-   .ng-valid {}
-   
-   /* field value is invalid */
-   .ng-invalid {}
-   
-   /* field has not been clicked in, tapped on, or tabbed over */
-   .ng-untouched {}
-   
-   /* field has been previously entered */
-   .ng-touched {}
-   
-   /* field value is unchanged from the default value */
-   .ng-pristine {}
-   
-   /* field value has been modified from the default */
-   .ng-dirty {}
-
-ote the three pairs:
-
- - valid / invalid
- - untouched / touched
- - pristine / dirty
-
-hese pairs can be used in many combinations in your CSS to change style
-ased on the three separate flags they represent. Angular will toggle
-etween the pairs on each input as the state of the input changes.
-
-``javascript
-   /* field has been unvisited and unchanged */
-   input.ng-untouched.ng-pristine {}
-   
-   /* field has been previously visited, and is invalid */
-   input.ng-touched.ng-invalid {}
-
- `.ng-untouched` will not be replaced by `.ng-touched` until the user
- *leaves* the input for the first time
-
-or templating purposes, Angular also gives you access to the unprefixed
-roperties on the input, in both code and template:
-
-``javascript
-   <input name="myInput" [formControl]="myCustomInput">
-   <div [hidden]="myCustomInput.pristine">I've been changed</div>
-
-/div>
-div class="section normal markdown-section">
-
- Visual Cues for Users
 
 HTML5 provides `:invalid` and `:valid` pseudo-selectors for its input
 fields.
