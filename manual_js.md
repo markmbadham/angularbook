@@ -5515,7 +5515,7 @@ subscription.
     }
 ```
 
-[View Example](http://plnkr.co/edit/XQL8v9?p=preview)
+[View Example](https://stackblitz.com/edit/angular-046-cancel-a-request)
 
 </div>
 <div class="section normal markdown-section">
@@ -5554,7 +5554,7 @@ attempts fail the stream throws an error.
     }
 ```
 
-[View Example](http://plnkr.co/edit/zSAWwV?p=preview)
+[View Example](https://stackblitz.com/edit/angular-047-http-retry)
 
 </div>
 <div class="section normal markdown-section">
@@ -5653,7 +5653,7 @@ OK, let's take a look at the component that will be using this service.
     }
 ```
 
-[View Example](http://plnkr.co/edit/L6CLXo?p=preview)
+[View Example](https://stackblitz.com/edit/angular-048-http-flatmap)
 
 Here we have set up a basic form with a single field, `search`, which we
 subscribe to for event changes. We've also set up a simple binding for
@@ -5803,7 +5803,7 @@ Here is the revised component using `switchMap` instead of `flatMap`.
     }
 ```
 
-[View Example](http://plnkr.co/edit/FYLTcx?p=preview)
+[View Example](https://stackblitz.com/edit/angular-049-http-switchmap)
 
 This implementation of incremental search with `switchMap` is more
 robust than the one we saw on the previous page with `flatMap`. The
@@ -6581,7 +6581,7 @@ We can also respond to external events, such as from `window` or
     }
 ```
 
-[View Example](https://plnkr.co/edit/iJvMpPYDQmiwqvUTKSU8?p=preview)
+[View Example](https://stackblitz.com/edit/angular-061-listening-element-host)
 
 > Although less common, we can also use `@HostListener` if we'd like to
 > register listeners on the host element of a Component.
@@ -6694,7 +6694,7 @@ are loaded, either for performance or UX.
     }
 ```
 
-[View Example](https://plnkr.co/edit/80AGn8bR4CiyH0ceP8ws?p=preview)
+[View Example](https://stackblitz.com/edit/angular-062-creating-structural-directive)
 
 We use the same `@Directive` class decorator as attribute directives and
 define a selector in the same way. One big difference here is that due
@@ -6721,7 +6721,7 @@ the Angular built-in structural directives.
     }
 ```
 
-[View Example](https://plnkr.co/edit/80AGn8bR4CiyH0ceP8ws?p=preview)
+[View Example](https://stackblitz.com/edit/angular-062-creating-structural-directive)
 
 Notice that no content is being rendered however. This is due to Angular
 simulating the html `template` tag and not rendering any child elements
@@ -6771,7 +6771,7 @@ are interested in using *Embedded Views* in this
     }
 ```
 
-[View Example](https://plnkr.co/edit/UIyFaG6VyHeeGlCKM76L?p=preview)
+[View Example](https://stackblitz.com/edit/angular-064-view-containers)
 
 Directives get access to the view container by injecting a
 `ViewContainerRef`. Embedded views are created and attached to a view
@@ -6819,7 +6819,7 @@ loads and make that variable available in the template.
     }
 ```
 
-[View Example](https://plnkr.co/edit/GmjxiDSbv78zbBFqw8yv?p=preview)
+[View Example](https://stackblitz.com/edit/angular-065-context-variables)
 
 We've made a few changes to our `appDelay` directive. We've created a
 new `DelayContext` class that contains the context that we want to
@@ -6848,7 +6848,7 @@ variable in the same way we access variables in `ngFor`.
     })
 ```
 
-[View Example](https://plnkr.co/edit/pSv4JsGhxxwzJOh9qSNj?p=preview)
+[View Example](https://stackblitz.com/edit/angular-066-context-variables-2)
 
 </div>
 <div class="section normal markdown-section">
@@ -7365,7 +7365,7 @@ desired output. A basic example of using pipes is shown below:
     }
 ```
 
-[View Example](http://plnkr.co/edit/JIdYGCz1U9ElEpCArg01?p=preview)
+[View Example](https://stackblitz.com/edit/angular-067-using-pipes)
 
 ## Passing Parameters
 
@@ -7395,7 +7395,7 @@ You can also pass multiple parameters this way:
     }
 ```
 
-[View Example](http://plnkr.co/edit/IjGPii3n7qpezcglp03O?p=preview)
+[View Example](https://stackblitz.com/edit/angular-068-passing-parameters)
 
 ## Chaining Pipes
 
@@ -7414,7 +7414,7 @@ expression.
     }
 ```
 
-[View Example](http://plnkr.co/edit/mnnujN8qPMfRzmNg4uo4?p=preview)
+[View Example](https://stackblitz.com/edit/angular-069-chaining-pipes)
 
 </div>
 <div class="section normal markdown-section">
