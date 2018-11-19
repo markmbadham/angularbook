@@ -7479,7 +7479,7 @@ argument in the same order.
     }
 ```
 
-[View Example](http://plnkr.co/edit/XF8NRDK3f7Yt0w1eUJDK?p=preview)
+[View Example](https://stackblitz.com/edit/angular-070-custom-pipes)
 
 </div>
 <div class="section normal markdown-section">
@@ -7524,7 +7524,7 @@ and its returned values depend on that subscription.
     }
 ```
 
-[View Example](http://plnkr.co/edit/LI2RHBfX6NVTvBeNnphR?p=preview)
+[View Example](https://stackblitz.com/edit/angular-071-async-pipe)
 
 ## Implementing Stateful Pipes
 
@@ -7562,7 +7562,7 @@ this pipe each cycle, whether its input has changed or not.
     }
 ```
 
-[View Example](http://plnkr.co/edit/HGIyhJvTrZEPtGn98QIG?p=preview)
+[View Example](https://stackblitz.com/edit/angular-072-stateful-pipes)
 
 </div>
 <div class="section normal markdown-section">
@@ -7998,7 +7998,7 @@ following:
     </form>
 ```
 
-[View Example](https://plnkr.co/edit/fsSozv?p=preview)
+[View Example](https://stackblitz.com/edit/angular-073-reactive-form-basics)
 
 ### `FormControl`
 
@@ -8113,7 +8113,7 @@ Note that we have added rather robust validation on both the fields and
 the form itself, using nothing more than built-in validators and some
 template logic.
 
-[View Example](https://plnkr.co/edit/TjpNF7?p=preview)
+[View Example](https://stackblitz.com/edit/angular-074-validating-reactive-forms)
 
 We are using `.valid` and `.untouched` to determine if we need to show
 errors - while the field is required, there is no reason to tell the
@@ -8165,7 +8165,7 @@ the `.hasError()` test.
     <!-- ... -->
 ```
 
-[View Example](https://plnkr.co/edit/obOPx9?p=preview)
+[View Example](https://stackblitz.com/edit/angular-075-reactive-forms-custom-validation)
 
 ### Predefined Parameters
 
@@ -8223,7 +8223,7 @@ Let's apply that thinking back to a `PunctuationValidator`.
     <!-- ... -->
 ```
 
-[View Example](https://plnkr.co/edit/2NNy4Q?p=preview)
+[View Example](https://stackblitz.com/edit/angular-076-formbuilder-predefined-validation)
 
 ### Validating Inputs Using Other Inputs
 
@@ -8249,82 +8249,12 @@ drilling through the form, via root.
     ]);
 ```
 
-[View Example](https://plnkr.co/edit/wfZgPw?p=preview)
+[View Example](https://stackblitz.com/edit/angular-077-formbuilder-validating-other-inputs)
 
 </div>
 <div class="section normal markdown-section">
 
 # Visual Cues for Users
-
-TML5 provides `:invalid` and `:valid` pseudo-selectors for its input
-ields.
-
-``javascript
-   input[type="text"]:valid {
-     border: 2px solid green;
-   }
-   
-   input[type="text"]:invalid {
-     border: 2px solid red;
-   }
-
-nfortunately, this system is rather unsophisticated and would require
-ore manual effort in order to work with complex forms or user behavior.
-
-ather than writing extra code, and creating and enforcing your own CSS
-lasses, to manage these behaviors, Angular provides you with several
-lasses, already accessible on your inputs.
-
-``javascript
-   /* field value is valid */
-   .ng-valid {}
-   
-   /* field value is invalid */
-   .ng-invalid {}
-   
-   /* field has not been clicked in, tapped on, or tabbed over */
-   .ng-untouched {}
-   
-   /* field has been previously entered */
-   .ng-touched {}
-   
-   /* field value is unchanged from the default value */
-   .ng-pristine {}
-   
-   /* field value has been modified from the default */
-   .ng-dirty {}
-
-ote the three pairs:
-
- - valid / invalid
- - untouched / touched
- - pristine / dirty
-
-hese pairs can be used in many combinations in your CSS to change style
-ased on the three separate flags they represent. Angular will toggle
-etween the pairs on each input as the state of the input changes.
-
-``javascript
-   /* field has been unvisited and unchanged */
-   input.ng-untouched.ng-pristine {}
-   
-   /* field has been previously visited, and is invalid */
-   input.ng-touched.ng-invalid {}
-
- `.ng-untouched` will not be replaced by `.ng-touched` until the user
- *leaves* the input for the first time
-
-or templating purposes, Angular also gives you access to the unprefixed
-roperties on the input, in both code and template:
-
-``javascript
-   <input name="myInput" [formControl]="myCustomInput">
-   <div [hidden]="myCustomInput.pristine">I've been changed</div>
-
-/div>
-div class="section normal markdown-section">
-
- Visual Cues for Users
 
 HTML5 provides `:invalid` and `:valid` pseudo-selectors for its input
 fields.
