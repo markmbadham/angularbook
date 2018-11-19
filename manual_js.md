@@ -8467,7 +8467,7 @@ compilation.
 > will require a slightly different bootstrap process that we are going
 > to discuss in another section.
 
-[View Example](https://plnkr.co/edit/f2TLtnGAtcZTSSuhWNQ9?p=preview)
+[View Example](https://stackblitz.com/edit/angular-078-bootstrapping-application)
 
 In the next section we are going to see how to create a module with
 multiple components, services and pipes.
@@ -8597,7 +8597,7 @@ root component of the module `AppComponent`. In the other hand, our
 custom service is configured with the dependency injection system with
 the `providers` property.
 
-[View Example](https://plnkr.co/edit/jInvNWc5aQ4FZAprExts?p=preview)
+[View Example](https://stackblitz.com/edit/angular-079-adding-components)
 
 Be aware that this method of defining a service in the `providers`
 property **should only be used in the root module**. Doing this in a
@@ -8733,7 +8733,7 @@ We can now import this feature module into our simplified root module.
 
 At this point we are done and our application behaves as expected.
 
-[View Example](https://plnkr.co/edit/TWUCyonAHYI5v57OuqEO?p=preview)
+[View Example](https://stackblitz.com/edit/angular-080-creating-feature-module)
 
 ## Services and Lazy Loaded Modules
 
@@ -8825,7 +8825,7 @@ root module. When the `CreditCardModule` is loaded (even lazy loaded),
 no new instance of that service is going to be added to the child
 injector.
 
-[View Example](https://plnkr.co/edit/YAObDCptFRdEBkFvDSJh?p=preview)
+[View Example](https://stackblitz.com/edit/angular-081-creating-feature-module-2)
 
 As a rule of thumb, **always use the `forRoot` syntax when exporting
 services from feature modules**, unless you have a very special need
@@ -8924,7 +8924,7 @@ to end up being applied?
 
 The answer is: the text is going to be gray and the background yellow.
 
-[View Example](https://plnkr.co/edit/yY3RRPDxf6urDfsMVNik?p=preview)
+[View Example](https://stackblitz.com/edit/angular-082-directive-duplications)
 
 We are allowed to define multiple directives that target the same
 elements in the same module. What's going to happen is that Angular is
@@ -9122,7 +9122,7 @@ just a placeholder for some text.
     export class LazyComponent {}
 ```
 
-[View Example](https://plnkr.co/edit/vpCqRHDAj7V6mlN1AknN?p=preview)
+[View Example](https://stackblitz.com/edit/angular-083-lazy-loading-module)
 
 When we load our application for the first time, the `AppModule` along
 the `AppComponent` will be loaded in the browser and we should see the
@@ -9201,7 +9201,7 @@ increment the `counter` property.
     }
 ```
 
-[View Example](https://plnkr.co/edit/C1QKHk9Uijtxtb13UU9t?p=preview)
+[View Example](https://stackblitz.com/edit/angular-084-lazy-loading-module-2)
 
 The service is working. If we increment the counter and then navigate
 back and forth between the `eager` and the `lazy` routes, the `counter`
