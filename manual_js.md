@@ -8467,7 +8467,7 @@ compilation.
 > will require a slightly different bootstrap process that we are going
 > to discuss in another section.
 
-[View Example](https://plnkr.co/edit/f2TLtnGAtcZTSSuhWNQ9?p=preview)
+[View Example](https://stackblitz.com/edit/angular-078-bootstrapping-application)
 
 In the next section we are going to see how to create a module with
 multiple components, services and pipes.
@@ -8597,7 +8597,7 @@ root component of the module `AppComponent`. In the other hand, our
 custom service is configured with the dependency injection system with
 the `providers` property.
 
-[View Example](https://plnkr.co/edit/jInvNWc5aQ4FZAprExts?p=preview)
+[View Example](https://stackblitz.com/edit/angular-079-adding-components)
 
 Be aware that this method of defining a service in the `providers`
 property **should only be used in the root module**. Doing this in a
@@ -8733,7 +8733,7 @@ We can now import this feature module into our simplified root module.
 
 At this point we are done and our application behaves as expected.
 
-[View Example](https://plnkr.co/edit/TWUCyonAHYI5v57OuqEO?p=preview)
+[View Example](https://stackblitz.com/edit/angular-080-creating-feature-module)
 
 ## Services and Lazy Loaded Modules
 
@@ -8825,7 +8825,7 @@ root module. When the `CreditCardModule` is loaded (even lazy loaded),
 no new instance of that service is going to be added to the child
 injector.
 
-[View Example](https://plnkr.co/edit/YAObDCptFRdEBkFvDSJh?p=preview)
+[View Example](https://stackblitz.com/edit/angular-081-creating-feature-module-2)
 
 As a rule of thumb, **always use the `forRoot` syntax when exporting
 services from feature modules**, unless you have a very special need
@@ -8924,7 +8924,7 @@ to end up being applied?
 
 The answer is: the text is going to be gray and the background yellow.
 
-[View Example](https://plnkr.co/edit/yY3RRPDxf6urDfsMVNik?p=preview)
+[View Example](https://stackblitz.com/edit/angular-082-directive-duplications)
 
 We are allowed to define multiple directives that target the same
 elements in the same module. What's going to happen is that Angular is
@@ -9122,7 +9122,7 @@ just a placeholder for some text.
     export class LazyComponent {}
 ```
 
-[View Example](https://plnkr.co/edit/vpCqRHDAj7V6mlN1AknN?p=preview)
+[View Example](https://stackblitz.com/edit/angular-083-lazy-loading-module)
 
 When we load our application for the first time, the `AppModule` along
 the `AppComponent` will be loaded in the browser and we should see the
@@ -9201,7 +9201,7 @@ increment the `counter` property.
     }
 ```
 
-[View Example](https://plnkr.co/edit/C1QKHk9Uijtxtb13UU9t?p=preview)
+[View Example](https://stackblitz.com/edit/angular-084-lazy-loading-module-2)
 
 The service is working. If we increment the counter and then navigate
 back and forth between the `eager` and the `lazy` routes, the `counter`
@@ -9336,7 +9336,7 @@ button to increase the internal `counter` property of the service.
     }
 ```
 
-[View Example](https://plnkr.co/edit/L2ypUQZiltSPXnLlxBoa?p=info)
+[View Example](https://stackblitz.com/edit/angular-085-shared-module)
 
 If you play with the live example, you will notice that the `counter`
 seems to behave independently in `EagerComponent` and `LazyComponent`,
@@ -9420,7 +9420,7 @@ in the root app injector, we do not need to import it in `LazyModule`.
 This is because the lazy loaded module will already have access to
 services defined at the root level.
 
-[View Example](https://plnkr.co/edit/dPpc40plyI8iu8ogrf3e?p=preview)
+[View Example](https://stackblitz.com/edit/angular-086-shared-module-2)
 
 This time, whenever we change the value of the `counter` property, this
 value is shared between the `EagerComponent` and the `LazyComponent`
@@ -9479,7 +9479,7 @@ can just import the module in `LazyModule` normally.
 Now we can use this directive within `LazyModule` without creating
 another instance of `CounterService`.
 
-[View Example](https://plnkr.co/edit/kqat7k4YhLSDKrjr8x2f?p=preview)
+[View Example](https://stackblitz.com/edit/angular-087-shared-module-3)
 
 </div>
 <div class="section normal markdown-section">
@@ -9682,7 +9682,7 @@ In the above example, the component corresponding to the route specified
 will be placed after the `<router-outlet></router-outlet>` element when
 the link is clicked.
 
-[View Example](https://plnkr.co/edit/OHfytJquXKm8jvSe2T9Y?p=preview)
+[View Example](https://stackblitz.com/edit/angular-088-route-components)
 
 > View examples running in full screen mode to see route changes in the
 > URL.
@@ -9790,10 +9790,10 @@ subscribe to to get the route parameters (see
 > change without the component being recreated.
 
 [View Basic
-Example](https://plnkr.co/edit/UjUlWKpO0wxQfB3P6YUG?p=preview)
+Example](https://stackblitz.com/edit/angular-089-reading-route-parameters)
 
 [View Example with Programmatic Route
-Navigation](https://plnkr.co/edit/5R0URH14ZiVjx81HEZxL?p=preview)
+Navigation](https://stackblitz.com/edit/angular-090-programmatic-route-navigation)
 
 > View examples running in full screen mode to see route changes in the
 > URL.
@@ -9900,10 +9900,10 @@ Since the `Overview` child route of `product-details` has an empty path,
 it will be loaded by default. The `specs` child route remains the same.
 
 [View Example with child
-routes](https://plnkr.co/edit/MqNv6RyQvzsiZTp0Dkpf?p=preview)
+routes](https://stackblitz.com/edit/angular-091-defining-child-routes)
 
 [View Example with route params & child
-routes](https://plnkr.co/edit/xFL7q0HeTGBPQT1ZiMnI?p=preview)
+routes](https://stackblitz.com/edit/angular-092-child-routes-parameters)
 
 > View examples running in full screen mode to see route changes in the
 > URL.
@@ -9938,7 +9938,7 @@ follows:
 ```
 
 [View Example child routes accessing parent's route
-parameters](https://plnkr.co/edit/7stoOP3oEl7dqwsgBgu9?p=preview)
+parameters](https://stackblitz.com/edit/angular-093-parent-route-parameters)
 
 > View examples running in full screen mode to see route changes in the
 > URL.
@@ -9968,7 +9968,7 @@ route. The link for route three links to a child of the root component
 (same as route one link if current route is root component).
 
 [View Example with linking throughout route
-tree](https://plnkr.co/edit/gsJxf6ukOXd4kNjLLVR3?p=preview)
+tree](https://stackblitz.com/edit/angular-094-router-linking-route-tree)
 
 > View examples running in full screen mode to see route changes in the
 > URL.
@@ -10116,7 +10116,7 @@ clicks 'OK', or false if user clicks 'Cancel'.
   }
 ```
 
-[View Example](http://plnkr.co/edit/sRNxfXsbcWnPU818aZsu?p=preview)
+[View Example](https://stackblitz.com/edit/angular-095-async-route-guards)
 
 [See Official Documentation for Route
 Guards](https://angular.io/docs/ts/latest/guide/router.html#!#guards)
@@ -10195,7 +10195,7 @@ read the query parameters:
     }
 ```
 
-[View Example](http://plnkr.co/edit/TJO3VuZNiweNPyc8eI2c?p=preview)
+[View Example](https://stackblitz.com/edit/angular-096-router-query-parameter)
 
 [See Official Documentation on Query
 Parameters](https://angular.io/docs/ts/latest/guide/router.html#!#query-parameters)
@@ -10252,7 +10252,7 @@ to navigate and render the contents.
     </a>
 ```
 
-[View Example](https://plnkr.co/edit/e5eK0ksB08GXzIRCyInr?p=preview)
+[View Example](https://stackblitz.com/edit/angular-097-using-auxiliary-routes)
 
 Each auxiliary route is an independent route which can have:
 
@@ -10284,7 +10284,6 @@ side-effect capabilities, then also run the following command:
 
 </div>
 <div class="section normal markdown-section">
-
 
 When building an application using Redux, the first thing to think about
 is, "What state do I want to store?" It is generally a good idea to
