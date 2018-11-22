@@ -11772,7 +11772,7 @@ expected.
     });
 ```
 
-[View Example](http://plnkr.co/edit/XUM8Gfz08nfbQf1BhDN1?p=preview)
+[View Example](https://stackblitz.com/edit/angular-098-verifying-methods-properties)
 
 We have created two tests: one for `setMessage` and the other for
 `clearMessage`. In order to call those functions we must first
@@ -11901,7 +11901,7 @@ on.
     });
 ```
 
-[View Example](http://plnkr.co/edit/7KZu1Yg6kBX7rksrpRHV?p=preview)
+[View Example](https://stackblitz.com/edit/angular-099-injecting-dependencies)
 
 Testing the `QuoteComponent` is a fairly straightforward process. We
 want to create a `QuoteComponent`, feed it a quote and see if it appears
@@ -12040,7 +12040,7 @@ you are interested in testing.
     });
 ```
 
-[View Example](http://plnkr.co/edit/P4tkaUYBFcHGvoTZjKnB?p=preview)
+[View Example](https://stackblitz.com/edit/angular-100-overriding-dependencies)
 
 </div>
 <div class="section normal markdown-section">
@@ -12124,7 +12124,7 @@ rewrite the unit test using `fakeAsync`:
     });
 ```
 
-[View Example](http://plnkr.co/edit/W7zHfjFvEGYW0BBNdQlU?p=preview)
+[View Example](https://stackblitz.com/edit/angular-101-testing-asynchronous-actions)
 
 Here we have a `QuoteComponent` that has a `getQuote` which triggers an
 asynchronous update. We have wrapped our entire test in `fakeAsync`
@@ -12332,7 +12332,7 @@ allowing us to test our service in isolation from real network traffic.
     });
 ```
 
-[View Example](http://plnkr.co/edit/K9gzDOcEOcmfFaOacdKZ?p=preview)
+[View Example](https://stackblitz.com/edit/angular-102-testing-http-requests)
 
 We use `inject` to inject the `SearchWiki` service and the `MockBackend`
 into our test. We then wrap our entire test with a call to `fakeAsync`,
@@ -12471,7 +12471,7 @@ requested the right URL, and that it returns that expected data.
     });
 ```
 
-[View Example](http://plnkr.co/edit/eplM1SETfR51USVZLUlU?p=preview)
+[View Example](https://stackblitz.com/edit/angular-103-testing-http-requests-2)
 
 </div>
 <div class="section normal markdown-section">
@@ -14522,7 +14522,7 @@ them up with classes or ids to indicate their role, for example:
     })
 ```
 
-[View Example](http://plnkr.co/edit/cm3wBDRqIrmxpECiQhg7?p=info)
+[View Example](https://stackblitz.com/edit/angular-104-semantic-markup)
 
 While it might be obvious to someone reading the HTML or using the
 application what the purpose of each element is, the class names don't
@@ -14551,7 +14551,7 @@ them more information by using the proper HTML elements instead.
     })
 ```
 
-[View Example](https://plnkr.co/edit/LHFNBsdcfbRPFnQg1DE8?p=preview)
+[View Example](https://stackblitz.com/edit/angular-105-semantic-markup-2)
 
 Here, we use the `header` element instead of a `div`, which lets the
 browser know that the elements within provide information about the site
@@ -14639,7 +14639,7 @@ this case you can make use of the `role` attribute:
     }
 ```
 
-[View Example](https://plnkr.co/edit/aAjNnmeaEPbdfIWo9hPT?p=preview)
+[View Example](https://stackblitz.com/edit/angular-106-roles)
 
 This lets you create a component that has the same semantics as a
 `button` element to screen readers and browsers, but now have the
@@ -14716,7 +14716,7 @@ the modal is.
     }
 ```
 
-[View Example](https://plnkr.co/edit/Vvu62nDZ18IkqiAop2A9?p=preview)
+[View Example](https://stackblitz.com/edit/angular-107-aria)
 
 ARIA tags can enhance the accessibility of an application, but should by
 no means be the only accessibility consideration. More information is
@@ -14825,7 +14825,7 @@ Modals are one example of this:
     }
 ```
 
-[View Example](https://plnkr.co/edit/Vvu62nDZ18IkqiAop2A9?p=preview)
+[View Example](https://stackblitz.com/edit/angular-107-aria)
 
 In this example, we see that when the modal becomes visible, the `OK`
 button immediately receives focus. This streamlines the experience for
@@ -15300,7 +15300,7 @@ French. We're assuming the translation file is
     });
 ```
 
-[View Example](http://plnkr.co/edit/p1bK6TFnKupReH9HmCOt?p=preview)
+[View Example](https://stackblitz.com/edit/angular-109-jit-compiler)
 
 We're using SystemJS text plugin to import raw xlf files. We could
 alternately use webpack and `raw-loader` to achieve the same effect.
